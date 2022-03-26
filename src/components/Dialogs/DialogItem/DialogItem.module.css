@@ -1,0 +1,7 @@
+.dialogs_items .active {
+    color: gold;
+}
+
+.dialog {
+    font-size: 16px;
+}
