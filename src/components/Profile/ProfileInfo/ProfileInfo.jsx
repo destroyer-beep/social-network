@@ -1,7 +1,7 @@
 import React from 'react';
 import bcg from '../../../assets/images/content-background.jpg'
 import Preloader from "../../common/Preloader/Preloader";
-import ProfileStatus from "./ProfileStatus";
+import ProfileStatusHooks from "./ProfileStatusHooks";
 
 const ProfileInfo = (props) => {
     return  <div>
@@ -9,7 +9,7 @@ const ProfileInfo = (props) => {
             <img src={bcg} alt="Content"/>
         </div>
         {props.id ? <div>{props.profile ? <img src={props.profile.photos.large}/> : <Preloader/>}</div> : null}
-        <div><ProfileStatus status={props.status} updateStatus={props.updateStatus}/></div>
+        <div><ProfileStatusHooks status={props.status} updateStatus={props.updateStatus}/></div>
         </div>
 }
 
